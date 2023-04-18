@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:cyan;
+    font-family: sans-serif;
+    outline: none;
+}
+#title{
+    font-size: 60px;
+    font-style:italic;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 0, 153);
+    text-shadow: 1px 1px 2px rgb(6, 6, 6);
+    margin-top: 75px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#description{
+    text-align: center; 
+}
+.container{
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calc{
+    background-color: azure;
+    /* background-color:rgb(19, 225, 232); */
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px rgb(76, 76, 76),
+                      5px 5px 12px rgb(63, 63, 63);
+    display: grid;
+    grid-template-columns: repeat(4, 65px);
+}
+input{
+    grid-column: span 4;
+    height: 70px;
+    width: 260px;
+    box-shadow: inset -4px -4px 10px rgb(237, 236, 236),
+                inset 4px 4px 10px rgb(110, 109, 110);
+    border: none;
+    border-radius: 25px;
+    background-color:white;
+    color: black;
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+button{
+    height: 48px;
+    width: 48px;
+    background-color:rgb(177, 177, 179);
+    box-shadow: inset -5px -5px 12px rgb(207, 206, 206),
+                inset 5px 5px 12px rgb(74, 74, 74);
+    border: none;
+    border-radius: 50%;
+    margin: 8px;
+    font-size: 20px;            
+}
+
+.zero{
+    background-color: aqua;
+    box-shadow: inset -5px -5px 12px rgb(68, 248, 89),
+                inset 5px 5px 12px rgb(36, 99, 37);
+    /* grid-column: span 2;
+    width: 115px;
+    border-radius: 40px;
+    text-align: left;
+    padding-left: 20px; */
+}
+.number{
+    background-color: white;
+    box-shadow:none;
+    box-shadow: inset -4px -4px 10px rgb(237, 236, 236),
+                inset 4px 4px 10px rgb(110, 109, 110);
+}
+.symbol{
+    background-color:greenyellow;
+    box-shadow: inset -5px -5px 12px rgb(233, 27, 34),
+                inset 5px 5px 12px rgb(255, 0, 85);
+
+}
+#equal{
+    grid-column: span 2;
+    width: 115px;
+    border-radius: 40px;
+    /* justify-content: center; */
+    text-align: center;
+    padding-left: 20px;
+    /* background-color: aqua;
+    box-shadow: inset -5px -5px 12px rgb(68, 248, 89),
+                inset 5px 5px 12px rgb(36, 99, 37); */
+}
+#clear:hover{
+    background-color: purple;
+    box-shadow: none;
+    transform: scale(1.2);
+}
+.number:hover{
+    background-color: lawngreen;
+    box-shadow: none;
+    transform: scale(1.2);
+}
+.row1:hover{
+    background-color: rgb(42, 225, 238);
+    box-shadow: none;
+    transform: scale(1.2);
+}
+.symbol:hover{
+    background-color:rgb(255, 0, 157);
+    box-shadow: none;
+    transform: scale(1.2);
+}
+#equal:hover{
+    background-color: rgb(6, 254, 6);
+    box-shadow: none;
+    transform: scale(1.2);
+}
